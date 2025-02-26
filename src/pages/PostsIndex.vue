@@ -18,7 +18,7 @@
       class="flex flex-col gap-2 py-2 px-4 rounded-lg border border-slate-100"
       style=""
     >
-      <router-link :to="`/${dir}/${post.file_name}`" class="text-base">
+      <router-link :to="`/${dir}/${post.file_name}`" class="text-base break-words">
         {{ post.meta.title }}
       </router-link>
       <span class="text-base">{{ post.meta.description }}</span>

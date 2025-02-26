@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --hd-h: 48px;
+    --max-w: 1080px
+} 
+.max-w {
+    width: min(var(--max-w), 100vw);
+    min-height: calc(100vh - var(--hd-h));
+    margin: 0 auto;
+}

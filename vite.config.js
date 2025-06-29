@@ -2,11 +2,13 @@ import path from 'path';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import mdPlugin from 'vite-plugin-markdown';
+import tailwindcss from '@tailwindcss/vite'
 import generateMetaData from './plugins/generateMetaData.js';
 
 export default defineConfig({
   base: './',
   plugins: [
+    tailwindcss(),
     vue(), 
     mdPlugin.default(),
     generateMetaData()

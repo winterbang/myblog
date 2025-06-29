@@ -1,9 +1,9 @@
 <template>
-  <div class="grid grid-cols-3 gap-4 px-4">
+  <div class="grid grid-cols-3 gap-4 p-4">
     <div
       v-for="i in 8"
       :key="i"
-      class="flex flex-col gap-2 py-2 px-4 rounded-lg border border-slate-100"
+      class="flex flex-col gap-2 py-2 px-4 rounded-lg border border-bookly-accent-200"
       style=""
     >
       <a class="text-base">今天做了什么</a>
@@ -26,4 +26,7 @@ fetch("/data/directoryStructure.json")
   });
 </script>
 
-<style></style>
+<style>
+@reference "tailwindcss";
+@config "../../tailwind.config.js";
+</style>

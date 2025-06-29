@@ -1,13 +1,64 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+@import './assets/css/fonts.css';
+@import './assets/css/md.css';
+
+
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
 
 :root {
-    --hd-h: 48px;
-    --max-w: 1080px
-} 
+  --hd-h: 75px;
+  --max-w: 1400px
+}
+
+    
+
+
+html, body {
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Comic Neue', 'Segoe UI', sans-serif;
+}
+
+body {
+  background: theme('colors.bokurano.bg');
+  font-family: 'Comic Neue', 'Segoe UI', sans-serif;
+  @apply bg-bokurano-bg;
+}
+
+/* 组件样式 */
+.bokurano-border {
+  @apply border-2 border-black/10 shadow-[2px_2px_0px_rgba(0,0,0,0.15)];
+}
+
+.bokurano-btn {
+  @apply bg-bokurano-primary border-2 border-bokurano-primary-dark 
+         shadow-[2px_2px_0px_rgba(0,0,0,0.15)] 
+         hover:bg-bokurano-primary-hover transition-colors;
+}
+
+.bokurano-link {
+  @apply text-bokurano-text-secondary underline underline-offset-4 
+         transition-colors hover:text-bokurano-text-link;
+}
+
+.main-container {
+  height: calc(100vh - var(--hd-h));
+  overflow: auto;
+  scroll-behavior: smooth;
+}
 .max-w {
-    width: min(var(--max-w), 100vw);
-    min-height: calc(100vh - var(--hd-h));
-    margin: 0 auto;
+  width: min(var(--max-w), 100vw);
+  margin: 0 auto;
+}
+
+.card {
+  @apply max-w-sm mx-auto bg-bokurano-card rounded-2xl shadow-inner p-6 text-bokurano-text-dark space-y-4 border border-bokurano-border min-w-min;
+}
+
+.card_light {
+  @apply bg-bokurano-light rounded-2xl p-8 text-center mb-6 mx-auto;
 }

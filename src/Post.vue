@@ -31,8 +31,10 @@ fetch(`./posts/${path.join("/")}`)
 </script>
 
 <style scoped>
+@reference "tailwindcss";
+
 .page {
-  @apply p-3 my-4 rounded-xl shadow-lg bg-slate-50;
+  @apply p-4 my-4 rounded-xl shadow-lg bg-slate-100;
 }
 .title {
   @apply text-3xl text-slate-950	font-black text-center break-all py-4;

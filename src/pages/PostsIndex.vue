@@ -1,33 +1,29 @@
 <template>
-  <div class="flex gap-2 p-2 my-2 border-2 rounded-xl">
-    <span
-      v-for="tag in tags"
-      :key="tag"
-      :class="{ 'text-indigo-700': activeTag === tag }"
-      class="cursor-pointer"
-      @click="activeTag = tag"
-    >
-      {{ tag }}
-    </span>
-  </div>
+  <b-nav :items="tags" v-model="activeTag"></b-nav>
 
-  <div class="grid grid-cols-3 gap-4 px-4">
-    <div
-      v-for="post in displayPosts"
-      :key="post.file_name"
-      class="flex flex-col gap-2 py-2 px-4 rounded-lg border border-slate-100"
-      style=""
-    >
-      <router-link :to="`/${dir}/${post.file_name}`" class="text-base break-words">
+  <div class="posts-wrraper">
+    <div v-for="post in displayPosts" :key="post.file_name" class="post-box">
+      <router-link
+        :to="`/${dir}/${post.file_name}`"
+        class="text-base break-words text-bokurano-text-dark"
+      >
         {{ post.meta.title }}
       </router-link>
-      <span class="text-base">{{ post.meta.description }}</span>
+      <span
+        class="text-sm text-bokurano-text-secondary py-2"
+        v-if="post.meta.description"
+      >
+        {{ post.meta.description }}
+      </span>
       <span class="flex gap-2 text-sm">
         <span v-for="tag in post.meta.tags" :key="tag" class="px-2 border rounded">
           {{ tag }}
         </span>
       </span>
-      <span class="text-slate-300 text-xs text-right">
+      <span
+        class="text-bokurano-text-secondary text-xs text-right"
+        style="margin-top: auto"
+      >
         最近更新：{{ post.updatedAt }}
       </span>
     </div>
@@ -58,7 +54,7 @@ const tags = computed(() => {
 });
 
 watch(tags, (newVal) => {
-  activeTag.value = newVal[0];
+  activeTag.value = newVal[1];
 });
 
 const displayPosts = computed(() => {
@@ -68,4 +64,20 @@ const displayPosts = computed(() => {
 });
 </script>
 
-<style></style>
+<style scoped>
+@reference "tailwindcss";
+@config "../../tailwind.config.js";
+
+.tags-wrraper {
+  @apply flex gap-2 py-2 px-4 my-2 border-2 rounded-xl;
+}
+
+.posts-wrraper {
+  --grid-cols: repeat(auto-fit, minmax(256px, 1fr));
+  @apply grid grid-cols-(--grid-cols) gap-4 px-4 flex-wrap;
+  .post-box {
+    @apply flex flex-col py-2 px-4 rounded-lg border border-slate-300;
+  }
+}
+</style>
+>

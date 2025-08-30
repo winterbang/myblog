@@ -207,5 +207,11 @@
       "Sources",
       "Images"
     ]
+  },
+  {
+    "href": "https://lordicon.com/",
+    "title": "Lordicon",
+    "iconSrc": "https://lordicon.com/favicon.ico",
+    "description": "Lordicon 是一个提供可定制的动画图标库"
   }
 ]

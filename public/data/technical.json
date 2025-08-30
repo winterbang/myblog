@@ -91,15 +91,29 @@
   {
     "file_name": "ts_typing.md",
     "meta": {
-      "title": "面向对象和面向协议两种类型声明",
+      "title": "面向对象和面向协议两种类型系统的设计哲学",
       "slug": "home",
       "tags": [
         "TypeScript"
       ],
-      "description": "面向对象和面向协议两种类型系统的设计哲学"
+      "description": "关于TypeScript 类型系统的设计哲学"
     },
     "type": "file",
     "size": "3.44KB",
+    "createdAt": "2025/08/30",
+    "updatedAt": "2025/08/30"
+  },
+  {
+    "file_name": "ts_类型声明.md",
+    "meta": {
+      "title": "TypeScript 常用的类型声明工具和关键字",
+      "tags": [
+        "TypeScript"
+      ],
+      "description": null
+    },
+    "type": "file",
+    "size": "4.75KB",
     "createdAt": "2025/08/30",
     "updatedAt": "2025/08/30"
   },

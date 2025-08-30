@@ -89,6 +89,21 @@
     "updatedAt": "2025/06/29"
   },
   {
+    "file_name": "ts_typing.md",
+    "meta": {
+      "title": "面向对象和面向协议两种类型声明",
+      "slug": "home",
+      "tags": [
+        "TypeScript"
+      ],
+      "description": "面向对象和面向协议两种类型系统的设计哲学"
+    },
+    "type": "file",
+    "size": "3.44KB",
+    "createdAt": "2025/08/30",
+    "updatedAt": "2025/08/30"
+  },
+  {
     "file_name": "vue_globalProperties.md",
     "meta": {
       "title": "Vue 组件中优雅的获取全局属性",

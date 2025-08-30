@@ -213,5 +213,32 @@
     "title": "Lordicon",
     "iconSrc": "https://lordicon.com/favicon.ico",
     "description": "Lordicon 是一个提供可定制的动画图标库"
+  },
+  {
+    "href": "https://flexboxlabs.netlify.app/",
+    "title": "Flexbox Labs",
+    "iconSrc": "https://flexboxlabs.netlify.app/favicon.ico",
+    "description": "A visual tool for experimenting with flexbox layouts",
+    "tags": [
+      "Tools"
+    ]
+  },
+  {
+    "href": "https://cssgrid-generator.netlify.app/",
+    "title": "CSS Grid Generator",
+    "iconSrc": "https://cssgrid-generator.netlify.app/favicon.ico",
+    "description": "A simple tool to generate CSS Grid code",
+    "tags": [
+      "Tools"
+    ]
+  },
+  {
+    "href": "https://gsap.com/",
+    "title": "GSAP",
+    "iconSrc": "https://gsap.com/favicon-32x32.png",
+    "description": "GSAP is an industry standard JavaScript animation library from GreenSock that lets you craft high-performance animations that work in every major browser.",
+    "tags": [
+      "Animation"
+    ]
   }
 ]

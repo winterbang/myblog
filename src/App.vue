@@ -41,7 +41,7 @@
     <Footer></Footer>
   </main>
 </template>
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue";
 import { useRoute } from "vue-router";
 import Footer from "./partials/Footer.vue";

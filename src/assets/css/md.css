@@ -229,7 +229,6 @@
     box-sizing: content-box;
   }
   
-  .markdown-body code,
   .markdown-body kbd,
   .markdown-body pre,
   .markdown-body samp {
@@ -460,7 +459,6 @@
   }
   
   .markdown-body tt,
-  .markdown-body code,
   .markdown-body samp {
     font-family: var(--fontStack-monospace, ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace);
     font-size: 12px;
@@ -580,17 +578,11 @@
   }
   
   .markdown-body h1 tt,
-  .markdown-body h1 code,
   .markdown-body h2 tt,
-  .markdown-body h2 code,
   .markdown-body h3 tt,
-  .markdown-body h3 code,
   .markdown-body h4 tt,
-  .markdown-body h4 code,
   .markdown-body h5 tt,
-  .markdown-body h5 code,
-  .markdown-body h6 tt,
-  .markdown-body h6 code {
+  .markdown-body h6 tt {
     padding: 0 .2em;
     font-size: inherit;
   }
@@ -811,7 +803,6 @@
     text-align: right;
   }
   
-  .markdown-body code,
   .markdown-body tt {
     padding: .2em .4em;
     margin: 0;
@@ -838,15 +829,6 @@
     font-size: 100%;
   }
   
-  .markdown-body pre>code {
-    padding: 0;
-    margin: 0;
-    word-break: normal;
-    white-space: pre;
-    background: transparent;
-    border: 0;
-  }
-  
   .markdown-body .highlight {
     margin-bottom: var(--base-size-16);
   }
@@ -867,7 +849,6 @@
     border-radius: 6px;
   }
   
-  .markdown-body pre code,
   .markdown-body pre tt {
     display: inline;
     max-width: auto;
@@ -1225,3 +1206,6 @@
     min-height: 52px;
   }
   
+  .markdown-body code {
+    border-radius: 8px;
+  }

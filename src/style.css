@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
 @import './assets/css/fonts.css';
 @import './assets/css/md.css';
-
+@import 'highlight.js/styles/atom-one-dark.css';
 
 @import "tailwindcss";
 @config "../tailwind.config.js";

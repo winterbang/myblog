@@ -51,7 +51,7 @@ const navs = ref(config.navs);
 const menuOpen = ref(false);
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 @reference "tailwindcss";
 @config "../tailwind.config.js";
 
